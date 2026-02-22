@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toyota HiAce - KeiWorks ClassicVan Pop-up</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
+  .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+  .back-link { display: inline-block; margin-bottom: 16px; color: #666; text-decoration: none; font-size: 0.9rem; }
+  .back-link:hover { color: #333; }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .subtitle { color: #666; font-size: 1rem; margin-bottom: 20px; }
+  .price-box { background: #1a1a2e; color: #fff; border-radius: 10px; padding: 24px; margin-bottom: 24px; display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+  .price-main { font-size: 2.4rem; font-weight: 700; }
+  .price-main span { font-size: 1rem; font-weight: 400; }
+  .price-sub { color: #aaa; font-size: 0.95rem; margin-top: 4px; }
+  .price-note { color: #777; font-size: 0.8rem; margin-top: 8px; }
+  .spec-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .spec-table th, .spec-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #eee; }
+  .spec-table th { background: #fafafa; color: #555; font-weight: 600; width: 40%; font-size: 0.9rem; }
+  .spec-table td { font-size: 0.95rem; }
+  .section-title { font-size: 1.2rem; font-weight: 600; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e74c3c; display: inline-block; }
+  .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; margin-bottom: 24px; }
+  .photo-grid img { width: 100%; height: auto; border-radius: 6px; cursor: pointer; transition: transform 0.2s; }
+  .photo-grid img:hover { transform: scale(1.02); }
+  .main-photo { width: 100%; border-radius: 10px; margin-bottom: 16px; }
+  .equipment { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .equipment ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .equipment li { background: #e8f5e9; color: #2e7d32; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; }
+  .features { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .features ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 6px; }
+  .features li { font-size: 0.85rem; padding: 4px 0; }
+  .features li::before { content: "✓ "; color: #2e7d32; font-weight: bold; }
+  .features li.no::before { content: "— "; color: #ccc; }
+  .source { text-align: center; color: #999; font-size: 0.8rem; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; }
+  .source a { color: #999; }
+  /* Lightbox */
+  .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center; cursor: pointer; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 95%; max-height: 95%; object-fit: contain; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a class="back-link" href="index.html">&larr; Back to Car List</a>
+  <h1>Toyota HiAce - KeiWorks ClassicVan</h1>
+  <p class="subtitle">Van Conversion Camper / Pop-up Roof / Dark Prime II / Sparkling Black Pearl</p>
+
+  <!-- Main Photo -->
+  <img class="main-photo" src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=0" alt="Toyota HiAce KeiWorks ClassicVan">
+
+  <!-- Price -->
+  <div class="price-box">
+    <div>
+      <div class="price-main">$48,440 USD <span>(Total Price incl. tax &amp; fees)</span></div>
+      <div class="price-sub">&yen;7,508,630 JPY (Vehicle: &yen;7,400,000 + Fees: &yen;108,630)</div>
+      <div class="price-note">Rate: 1 USD = 155 JPY (Feb 2026 approx.) — final price may vary</div>
+    </div>
+  </div>
+
+  <!-- Basic Specs -->
+  <div class="section-title">Specifications</div>
+  <table class="spec-table">
+    <tr><th>Model</th><td>Toyota HiAce (Van Conversion / Campervan)</td></tr>
+    <tr><th>Camper Builder</th><td>KeiWorks — ClassicVan Pop-up</td></tr>
+    <tr><th>Year</th><td>2021 (Reiwa 3)</td></tr>
+    <tr><th>Mileage</th><td>23,805 km</td></tr>
+    <tr><th>Engine</th><td>2,000cc Gasoline</td></tr>
+    <tr><th>Transmission</th><td>Automatic</td></tr>
+    <tr><th>Drive</th><td>2WD</td></tr>
+    <tr><th>Color</th><td>Sparkling Black Pearl</td></tr>
+    <tr><th>Doors</th><td>5</td></tr>
+    <tr><th>Seating Capacity</th><td>6 persons</td></tr>
+    <tr><th>Dimensions (L×W×H)</th><td>469 cm × 169 cm × 208 cm</td></tr>
+    <tr><th>Accident History</th><td>None</td></tr>
+    <tr><th>Vehicle Inspection</th><td>Expired (new inspection available upon purchase)</td></tr>
+    <tr><th>Legal Maintenance</th><td>Included</td></tr>
+    <tr><th>Warranty</th><td>Included</td></tr>
+    <tr><th>Recycling Fee</th><td>Included</td></tr>
+    <tr><th>Previous Owners</th><td>1 owner</td></tr>
+    <tr><th>Location</th><td>Saitama Prefecture, Japan (Yorii Store)</td></tr>
+  </table>
+
+  <!-- Camper Equipment -->
+  <div class="section-title">Camper Equipment</div>
+  <div class="equipment">
+    <ul>
+      <li>Pop-up Roof</li>
+      <li>FF Heater</li>
+      <li>Inverter</li>
+      <li>Lithium Sub-battery</li>
+      <li>Driving Charger (CTEK)</li>
+      <li>External Power Input / Charger</li>
+      <li>Solar Panel</li>
+      <li>Kitchen Sink (19L poly tanks × 2)</li>
+      <li>Rear Cooler &amp; Heater</li>
+    </ul>
+  </div>
+
+  <!-- Vehicle Features -->
+  <div class="section-title">Vehicle Features</div>
+  <div class="equipment">
+    <ul>
+      <li>Dark Prime II Package</li>
+      <li>Toyota Safety Sense (TSS)</li>
+      <li>Smart Key</li>
+      <li>Navigation &amp; TV</li>
+      <li>Back Monitor</li>
+      <li>ETC</li>
+      <li>Digital Terrestrial TV</li>
+      <li>ABS</li>
+      <li>Airbags</li>
+      <li>3-row Seating</li>
+      <li>Sliding Door</li>
+      <li>Security System</li>
+      <li>Maintenance Records</li>
+    </ul>
+  </div>
+
+  <!-- Dealer Info -->
+  <div class="section-title">Dealer</div>
+  <table class="spec-table">
+    <tr><th>Shop</th><td>Fuji Cars Japan — Saitama Yorii (Camping Car)</td></tr>
+    <tr><th>Address</th><td>52-1 Imaichi, Yorii-machi, Osato-gun, Saitama, Japan</td></tr>
+    <tr><th>Phone</th><td>048-598-3838</td></tr>
+    <tr><th>Hours</th><td>09:00 - 18:00 (Closed on Tuesdays, except holidays)</td></tr>
+    <tr><th>Email</th><td>camp-yorii@fujicars.jp</td></tr>
+  </table>
+
+  <!-- Photos -->
+  <div class="section-title">Photos (20 images)</div>
+  <div class="photo-grid">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=0" alt="Exterior front" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=1" alt="Exterior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=2" alt="Exterior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=3" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=4" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=5" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=6" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=7" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=8" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=9" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=10" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=11" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=12" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=13" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=14" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=15" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=16" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=17" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=18" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.campnofuji.jp/search/image_display?car_no=124883&image_name=19" alt="Detail" onclick="openLightbox(this)">
+  </div>
+
+  <div class="source">
+    Source: <a href="https://www.campnofuji.jp/search/detail/52014588" target="_blank">Camping Car no Fuji</a>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+function openLightbox(el) {
+  document.getElementById('lightboxImg').src = el.src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+</body>
+</html>
