@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toyota HiAce Campervan - Toy-Factory GT Grande</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
+  .container { max-width: 960px; margin: 0 auto; padding: 14px; }
+  .back-link { display: inline-block; margin-bottom: 10px; color: #666; text-decoration: none; font-size: 0.85rem; }
+  .car-number { display: inline-block; background: #e74c3c; color: #fff; font-size: 2rem; font-weight: 900; padding: 6px 20px; border-radius: 8px; margin-bottom: 10px; }
+  h1 { font-size: 1.4rem; margin-bottom: 4px; }
+  .subtitle { color: #666; font-size: 0.85rem; margin-bottom: 14px; }
+  .price-box { background: #1a1a2e; color: #fff; border-radius: 10px; padding: 16px; margin-bottom: 20px; }
+  .price-main { font-size: 1.8rem; font-weight: 700; line-height: 1.3; }
+  .price-main span { font-size: 0.85rem; font-weight: 400; display: block; margin-top: 2px; }
+  .price-sub { color: #aaa; font-size: 0.82rem; margin-top: 6px; line-height: 1.4; }
+  .price-note { color: #777; font-size: 0.75rem; margin-top: 6px; }
+
+  /* Sleeper highlight badge */
+  .sleeper-badge { display: inline-block; background: #ff9800; color: #fff; font-size: 1.3rem; font-weight: 800; padding: 8px 18px; border-radius: 8px; margin: 10px 0 14px; animation: pulse 2s ease-in-out infinite; }
+  .sleeper-badge .icon { font-size: 1.4rem; margin-right: 4px; }
+  @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
+
+  .spec-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .spec-table th, .spec-table td { padding: 8px 10px; text-align: left; border-bottom: 1px solid #eee; font-size: 0.82rem; }
+  .spec-table th { background: #fafafa; color: #555; font-weight: 600; width: 38%; }
+  .spec-table .highlight-row td { background: #fff3e0; font-weight: 700; color: #e65100; font-size: 0.95rem; }
+  .spec-table .highlight-row th { background: #fff3e0; color: #e65100; font-weight: 700; }
+  .section-title { font-size: 1.1rem; font-weight: 600; margin: 20px 0 10px; padding-bottom: 6px; border-bottom: 2px solid #e74c3c; display: inline-block; }
+  .photo-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 6px; margin-bottom: 20px; }
+  .photo-grid img { width: 100%; height: auto; border-radius: 4px; cursor: pointer; }
+  .main-photo { width: 100%; border-radius: 8px; margin-bottom: 12px; }
+  .equipment { background: #fff; border-radius: 10px; padding: 14px; margin-bottom: 20px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .equipment ul { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; }
+  .equipment li { background: #e8f5e9; color: #2e7d32; padding: 5px 12px; border-radius: 20px; font-size: 0.78rem; }
+  .dealer-logo { text-align: center; margin: 14px 0; }
+  .dealer-logo img { max-width: 200px; }
+  .source { text-align: center; color: #999; font-size: 0.75rem; margin-top: 24px; padding-top: 16px; border-top: 1px solid #ddd; }
+  .source a { color: #999; }
+  .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center; cursor: pointer; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 95%; max-height: 95%; object-fit: contain; }
+  @media (min-width: 700px) {
+    .container { padding: 20px; }
+    h1 { font-size: 1.8rem; }
+    .price-main { font-size: 2.4rem; }
+    .price-main span { display: inline; }
+    .sleeper-badge { font-size: 1.5rem; }
+    .spec-table th, .spec-table td { padding: 12px 16px; font-size: 0.9rem; }
+    .photo-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <a class="back-link" href="index.html">&larr; Back to Car List</a><br>
+  <span class="car-number">No.4</span>
+  <h1>Toyota HiAce — Toy-Factory GT Grande</h1>
+  <p class="subtitle">Van Conversion Camper / 2,700cc Gasoline / 8-number Registration (Camper) / White / Non-smoking</p>
+
+  <!-- Sleeper highlight -->
+  <div class="sleeper-badge"><span class="icon">&#128564;</span> Sleeps 4 people</div>
+
+  <!-- Main Photo -->
+  <img class="main-photo" src="https://www.yacco.cc/wp-content/uploads/2026/02/1-15.jpg" alt="Toyota HiAce Toy-Factory GT Grande">
+
+  <!-- Dealer Logo -->
+  <div class="dealer-logo">
+    <img src="https://www.yacco.cc/wp-content/themes/Yacco/images/common/logo.png" alt="Yacco">
+  </div>
+
+  <!-- Price -->
+  <div class="price-box">
+    <div>
+      <div class="price-main">$58,220 USD <span>(Total Price incl. tax &amp; fees)</span></div>
+      <div class="price-sub">&yen;9,024,000 JPY (Vehicle: &yen;8,998,000 + Fees: &yen;26,000)</div>
+      <div class="price-note">Rate: 1 USD = 155 JPY (Feb 2026 approx.) — final price may vary</div>
+    </div>
+  </div>
+
+  <!-- Basic Specs -->
+  <div class="section-title">Specifications</div>
+  <table class="spec-table">
+    <tr><th>Model</th><td>Toyota HiAce Van (Van Conversion)</td></tr>
+    <tr><th>Camper Builder</th><td>Toy-Factory — GT Grande</td></tr>
+    <tr><th>Year</th><td>2020 (Reiwa 2) October</td></tr>
+    <tr><th>Mileage</th><td>9,900 km</td></tr>
+    <tr><th>Engine</th><td>2,700cc Gasoline</td></tr>
+    <tr><th>Transmission</th><td>Automatic</td></tr>
+    <tr><th>Drive</th><td>2WD</td></tr>
+    <tr><th>Body Type</th><td>Van Conversion (Bancon)</td></tr>
+    <tr><th>Color</th><td>White</td></tr>
+    <tr><th>Seating Capacity</th><td>7 persons</td></tr>
+    <tr class="highlight-row"><th>&#128564; Sleeping Capacity</th><td>4 persons (Bunk bed + Convertible seat bed + Assembled bed)</td></tr>
+    <tr><th>Registration</th><td>8-number (Camper registration)</td></tr>
+    <tr><th>Vehicle Inspection</th><td>Valid until Dec 2026 (Reiwa 8)</td></tr>
+    <tr><th>NOx/PM</th><td>Compliant</td></tr>
+    <tr><th>Accident History</th><td>None</td></tr>
+    <tr><th>Condition</th><td>Non-smoking vehicle</td></tr>
+  </table>
+
+  <!-- Camper Equipment -->
+  <div class="section-title">Camper Equipment</div>
+  <div class="equipment">
+    <ul>
+      <li>FF Heater (Diesel)</li>
+      <li>1500W Inverter</li>
+      <li>Refrigerator (12V)</li>
+      <li>Microwave</li>
+      <li>Kitchen Sink</li>
+      <li>Water Tank (Fresh &amp; Waste)</li>
+      <li>Twin Sub-batteries</li>
+      <li>Shore Power Hook-up</li>
+      <li>Driving Charge System</li>
+      <li>Rear TV</li>
+      <li>Twin Subwoofer</li>
+      <li>Screen Door (Mosquito Net)</li>
+      <li>Table</li>
+      <li>AC Outlets (4x)</li>
+      <li>DC Outlet (1x)</li>
+    </ul>
+  </div>
+
+  <!-- Vehicle Features -->
+  <div class="section-title">Vehicle Features</div>
+  <div class="equipment">
+    <ul>
+      <li>11-inch Navigation</li>
+      <li>Rear Camera</li>
+      <li>ETC 2.0</li>
+      <li>Front &amp; Rear Dashcam</li>
+      <li>Leaf Springs (Upgraded)</li>
+      <li>Stabilizer</li>
+      <li>Reinforced Suspension</li>
+      <li>External Power &amp; Charging</li>
+    </ul>
+  </div>
+
+  <!-- Beds Info -->
+  <div class="section-title">Bed Configuration</div>
+  <table class="spec-table">
+    <tr><th>Bed Types</th><td>Bunk Bed / Seat-convertible Bed / Assembled Bed</td></tr>
+    <tr class="highlight-row"><th>&#128564; Total Sleepers</th><td>4 persons</td></tr>
+    <tr><th>Toilet</th><td>Not equipped (portable toilet can be added)</td></tr>
+  </table>
+
+  <!-- Dealer Info -->
+  <div class="section-title">Dealer</div>
+  <table class="spec-table">
+    <tr><th>Shop</th><td>Yacco — Car Sales &amp; Rental</td></tr>
+    <tr><th>Address</th><td>4012-3 Kobari, Tsukubamirai City, Ibaraki 300-2353, Japan</td></tr>
+    <tr><th>Phone</th><td>0297-47-6080 / FAX: 0297-47-6081</td></tr>
+    <tr><th>Note</th><td>Nationwide delivery available</td></tr>
+  </table>
+
+  <!-- Photos -->
+  <div class="section-title">Photos (20 images)</div>
+  <div class="photo-grid">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/1-15.jpg" alt="Exterior Front" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/2-15.jpg" alt="Exterior Side" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/3-16.jpg" alt="Exterior" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/4-16.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/5-16.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/6-16.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/7-16.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/8-16.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/9-16.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/10-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/11-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/12-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/13-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/14-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/15-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/16-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/17-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/18-16.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://www.yacco.cc/wp-content/uploads/2026/02/19-13.jpg" alt="Detail" onclick="openLightbox(this)">
+  </div>
+
+  <div class="source">
+    Source: <a href="https://www.yacco.cc/stock/r2%e5%b9%b4%e3%80%80%e3%83%88%e3%82%a4%e3%83%95%e3%82%a1%e3%82%af%e3%83%88%e3%83%aa%e3%83%bc%e8%a3%bdgt%e3%82%b0%e3%83%a9%e3%83%b3%e3%83%87%e3%80%80%e3%83%8f%e3%82%a4%e3%82%a8%e3%83%bc%e3%82%b9/" target="_blank">Yacco — Camping Car Specialist</a>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+function openLightbox(el) {
+  document.getElementById('lightboxImg').src = el.src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+</body>
+</html>
