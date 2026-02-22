@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Toyota HiAce Campervan - Vantech Mayorca</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f5f5; color: #333; }
+  .container { max-width: 960px; margin: 0 auto; padding: 20px; }
+  h1 { font-size: 1.8rem; margin-bottom: 4px; }
+  .subtitle { color: #666; font-size: 1rem; margin-bottom: 20px; }
+  .price-box { background: #1a1a2e; color: #fff; border-radius: 10px; padding: 24px; margin-bottom: 24px; display: flex; gap: 40px; align-items: center; flex-wrap: wrap; }
+  .price-main { font-size: 2.4rem; font-weight: 700; }
+  .price-main span { font-size: 1rem; font-weight: 400; }
+  .price-sub { color: #aaa; font-size: 0.95rem; }
+  .spec-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .spec-table th, .spec-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid #eee; }
+  .spec-table th { background: #fafafa; color: #555; font-weight: 600; width: 40%; font-size: 0.9rem; }
+  .spec-table td { font-size: 0.95rem; }
+  .section-title { font-size: 1.2rem; font-weight: 600; margin: 24px 0 12px; padding-bottom: 8px; border-bottom: 2px solid #e74c3c; display: inline-block; }
+  .photo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 8px; margin-bottom: 24px; }
+  .photo-grid img { width: 100%; height: auto; border-radius: 6px; cursor: pointer; transition: transform 0.2s; }
+  .photo-grid img:hover { transform: scale(1.02); }
+  .main-photo { width: 100%; border-radius: 10px; margin-bottom: 16px; }
+  .equipment { background: #fff; border-radius: 10px; padding: 20px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+  .equipment ul { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
+  .equipment li { background: #e8f5e9; color: #2e7d32; padding: 6px 14px; border-radius: 20px; font-size: 0.85rem; }
+  .source { text-align: center; color: #999; font-size: 0.8rem; margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; }
+  .source a { color: #999; }
+  /* Lightbox */
+  .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center; cursor: pointer; }
+  .lightbox.active { display: flex; }
+  .lightbox img { max-width: 95%; max-height: 95%; object-fit: contain; }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <h1>Toyota HiAce Van - Campervan</h1>
+  <p class="subtitle">Vantech Mayorca / Pop-up Roof / 8-number Registration (Camper) / Silver</p>
+
+  <!-- Main Photo -->
+  <img class="main-photo" src="https://ccsrpcma.carsensor.net/CSphoto/bkkn/202/199/U00037202199/U00037202199_003L.JPG" alt="Toyota HiAce Campervan">
+
+  <!-- Price -->
+  <div class="price-box">
+    <div>
+      <div class="price-main">&yen;3,010,000 <span>(Vehicle Price incl. tax)</span></div>
+      <div class="price-sub">Total Payment: &yen;3,167,000 (incl. &yen;157,000 fees)</div>
+    </div>
+  </div>
+
+  <!-- Basic Specs -->
+  <div class="section-title">Specifications</div>
+  <table class="spec-table">
+    <tr><th>Model</th><td>Toyota HiAce Van DX</td></tr>
+    <tr><th>Camper Builder</th><td>Vantech Mayorca</td></tr>
+    <tr><th>Year</th><td>2010</td></tr>
+    <tr><th>Mileage</th><td>49,000 km</td></tr>
+    <tr><th>Engine</th><td>2,000cc Gasoline</td></tr>
+    <tr><th>Transmission</th><td>4-speed Automatic (Column)</td></tr>
+    <tr><th>Drive</th><td>2WD (Rear-wheel drive)</td></tr>
+    <tr><th>Steering</th><td>Right-hand drive (JDM)</td></tr>
+    <tr><th>Color</th><td>Silver</td></tr>
+    <tr><th>Seating Capacity</th><td>8 persons</td></tr>
+    <tr><th>Sleeping Capacity</th><td>4 persons</td></tr>
+    <tr><th>Doors</th><td>5</td></tr>
+    <tr><th>Accident History</th><td>None</td></tr>
+    <tr><th>Vehicle Inspection</th><td>Included (new inspection upon purchase)</td></tr>
+    <tr><th>Legal Maintenance</th><td>Included (24-month inspection)</td></tr>
+    <tr><th>Warranty</th><td>None</td></tr>
+    <tr><th>Location</th><td>Ibaraki Prefecture, Japan</td></tr>
+  </table>
+
+  <!-- Camper Equipment -->
+  <div class="section-title">Camper Equipment</div>
+  <div class="equipment">
+    <ul>
+      <li>Pop-up Roof</li>
+      <li>Kitchen Sink</li>
+      <li>FF Heater (Diesel Air Heater)</li>
+      <li>Sub-battery</li>
+      <li>Driving Charger</li>
+      <li>External Power Input / Charger</li>
+      <li>FASP Seats (2nd & 3rd row - forward/rear/bed convertible)</li>
+    </ul>
+  </div>
+
+  <!-- Bed Size Info -->
+  <div class="section-title">Bed Dimensions</div>
+  <table class="spec-table">
+    <tr><th>Lower Flat Bed</th><td>280 cm (L) x 150 cm (W) / min width 90 cm</td></tr>
+    <tr><th>Pop-up Roof Bed</th><td>210 cm (L) x 102 cm (W)</td></tr>
+  </table>
+
+  <!-- Dealer Info -->
+  <div class="section-title">Dealer</div>
+  <table class="spec-table">
+    <tr><th>Shop</th><td>Fuji Cars Japan - Ibaraki Central (Camping Car)</td></tr>
+    <tr><th>Address</th><td>442 Asahi-machi, Kasama City, Ibaraki, Japan</td></tr>
+    <tr><th>Phone</th><td>0078-6002-671192 (Free) / Direct: 0296-70-5080</td></tr>
+    <tr><th>Hours</th><td>09:00 - 18:00</td></tr>
+  </table>
+
+  <!-- Photos -->
+  <div class="section-title">Photos (79 images)</div>
+  <div class="photo-grid">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_1_002.jpg" alt="Exterior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_2_002.jpg" alt="Exterior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_3_002.jpg" alt="Camper registration - 8 seats / 4 sleeper" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_5_002.jpg" alt="FASP seats - convertible to bed" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_7_002.jpg" alt="Lower flat bed 280x150cm" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_8_002.jpg" alt="Pop-up roof with mesh screen" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_9_002.jpg" alt="Pop-up roof bed 210x102cm" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_10_002.jpg" alt="Kitchen sink" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_11_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_12_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_13_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_14_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_15_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_16_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_17_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_18_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_19_002.jpg" alt="Interior" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_30_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_31_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_32_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_33_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_34_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_35_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_36_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_37_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_38_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_39_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_40_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_41_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_42_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_43_002.jpg" alt="Detail" onclick="openLightbox(this)">
+    <img src="https://ccsrpcml.carsensor.net/CSphoto/ml/202/199/U00037202199/U00037202199_44_002.jpg" alt="Detail" onclick="openLightbox(this)">
+  </div>
+
+  <div class="source">
+    Source: <a href="https://www.carsensor.net/usedcar/detail/VU7693055116/index.html?TRCD=200002&RESTID=CS211800" target="_blank">Carsensor.net</a>
+  </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <img id="lightboxImg" src="" alt="">
+</div>
+
+<script>
+function openLightbox(el) {
+  document.getElementById('lightboxImg').src = el.src;
+  document.getElementById('lightbox').classList.add('active');
+}
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+}
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLightbox();
+});
+</script>
+</body>
+</html>
